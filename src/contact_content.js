@@ -23,9 +23,7 @@ const contactContent = () => {
   emailDiv.appendChild(emailInput);
   form.appendChild(button);
   row.appendChild(form);
-
-
   return row;
-}
+};
 
-export {contactContent}
+export default contactContent;

@@ -5,19 +5,19 @@ const menuContent = () => {
   row.classList.add('p-4');
   const menus = [
     [
-      "Most popular",
-      "Sauce Gnagnan"
+      'Most popular',
+      'Sauce Gnagnan',
     ],
     [
-      "Top picked",
-      "Alloco"
+      'Top picked',
+      'Alloco',
     ],
     [
-      "Our special",
-      "Garba"
-    ]
+      'Our special',
+      'Garba',
+    ],
   ];
-  for (let i = 0; i < menus.length; i++) {
+  for (let i = 0; i < menus.length; i += 1) {
     const shadow = document.createElement('div');
     shadow.classList.add('col-12');
     shadow.classList.add('rounded');
@@ -29,15 +29,14 @@ const menuContent = () => {
     shadow.classList.add('m-3');
     row.appendChild(shadow);
     const small = document.createElement('small');
-    small.innerHTML = menus[i][0];
     const p = document.createElement('p');
-    p.innerHTML = menus[i][1];
+    [small.innerHTML, p.innerHTML] = menus[i];
     p.classList.add('mt-2');
     shadow.appendChild(small);
     shadow.appendChild(p);
-  };
+  }
 
   return row;
-}
+};
 
-export {menuContent}
+export default menuContent;
