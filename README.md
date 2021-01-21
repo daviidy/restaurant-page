@@ -25,6 +25,7 @@ You can find the demo [here](https://daviidy.github.io/restaurant-page/)
 - clone the repository from here [repo link](https://github.com/daviidy/restaurant-page)
 - navigate in your terminal to the folder `restaurant-page`
 - run `npm install`
+- run `npx webpack`
 - open index.html with your browser
 
 ## 👨🏽‍💻 👨🏿‍💻 Creators
