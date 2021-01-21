@@ -1,4 +1,4 @@
-export default function menuContent() {
+const menuContent = () => {
   const row = document.createElement('div');
   row.classList.add('row');
   row.classList.add('mt-2');
@@ -34,7 +34,9 @@ export default function menuContent() {
     p.classList.add('mt-2');
     shadow.appendChild(small);
     shadow.appendChild(p);
-  };
+  }
 
   return row;
-}
+};
+
+export default menuContent;

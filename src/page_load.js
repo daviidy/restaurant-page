@@ -1,4 +1,4 @@
-export default function pageLoad() {
+const pageLoad = () => {
   const element = document.createElement('div');
   const jumbotronContainer = document.createElement('div');
   jumbotronContainer.classList.add('container-fluid');
@@ -30,7 +30,7 @@ export default function pageLoad() {
   jumbotron.appendChild(imageContent);
   const image = document.createElement('img');
   image.classList.add('img-fluid');
-  image.setAttribute("src", "https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  image.setAttribute('src', 'https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
   imageContent.appendChild(image);
   const infoContainer = document.createElement('div');
   infoContainer.classList.add('container');
@@ -73,7 +73,7 @@ export default function pageLoad() {
     p.classList.add('mt-2');
     shadow.appendChild(small);
     shadow.appendChild(p);
-  };
+  }
   const rowTabs = document.createElement('div');
   rowInfo.classList.add('row');
   infoContainer.appendChild(rowTabs);
@@ -133,4 +133,6 @@ export default function pageLoad() {
   contactContent.setAttribute('aria-labelledby', 'nav-profile-tab');
   navTabs.appendChild(contactContent);
   return element;
-};
+}
+
+export default pageLoad;

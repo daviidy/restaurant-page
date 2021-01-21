@@ -1,4 +1,4 @@
-export default function contactContent() {
+const contactContent = () => {
   const row = document.createElement('div');
   row.classList.add('row');
   row.classList.add('mt-2');
@@ -24,4 +24,6 @@ export default function contactContent() {
   form.appendChild(button);
   row.appendChild(form);
   return row;
-}
+};
+
+export default contactContent;
