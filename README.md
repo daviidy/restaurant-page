@@ -12,17 +12,17 @@ This is the second project in the Microverse Javascript module. The goal of the 
 
 ## 🚀 Our Project
 
-Our project can be found at https://github.com/sinework/Library-v1.1
+Our project can be found at https://github.com/daviidy/restaurant-page
 
 ## Live Demo
 
-You can find the demo [here](https://sinework.github.io/Library-v1.1/)
+You can find the demo [here](https://daviidy.github.io/restaurant-page/)
 
 
 ## To run the project in local
 
 - make sure you have have NodeJS and NPM installed in your computer
-- clone the repository from here [repo link](https://github.com/sinework/Library-v1.1)
+- clone the repository from here [repo link](https://github.com/daviidy/restaurant-page)
 - navigate in your terminal to the folder `restaurant-page`
 - run `npm install`
 - open index.html with your browser
@@ -39,8 +39,6 @@ You can find the demo [here](https://sinework.github.io/Library-v1.1/)
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page](https://github.com/daviidy/Micro-Reddit/issues).
 
 ## Show your support
 
