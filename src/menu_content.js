@@ -15,9 +15,9 @@ export default function menuContent() {
     [
       'Our special',
       'Garba',
-    ]
+    ],
   ];
-  for (let i = 0; i < menus.length; i++) {
+  for (let i = 0; i < menus.length; i += 1) {
     const shadow = document.createElement('div');
     shadow.classList.add('col-12');
     shadow.classList.add('rounded');
@@ -30,11 +30,11 @@ export default function menuContent() {
     row.appendChild(shadow);
     const small = document.createElement('small');
     const p = document.createElement('p');
-    [small.innerHTML, p.innerHTML] = menus[i]
+    [small.innerHTML, p.innerHTML] = menus[i];
     p.classList.add('mt-2');
     shadow.appendChild(small);
     shadow.appendChild(p);
-  }
+  };
 
   return row;
-};
+}

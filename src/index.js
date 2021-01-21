@@ -1,9 +1,9 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
-import { pageLoad } from './page_load';
+import pageLoad from './page_load';
 import menuContent from './menu_content';
-import { contactContent } from './contact_content';
+import contactContent from './contact_content';
 
 const content = document.getElementById('content');
 content.appendChild(pageLoad());
