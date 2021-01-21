@@ -61,7 +61,6 @@ const pageLoad = () => {
       ]
     ];
     for (let i = 0; i < infos.length; i++) {
-      console.log('test');
       const shadow = document.createElement('div');
       shadow.classList.add('col-sm-3');
       shadow.classList.add('col-12');
@@ -125,6 +124,29 @@ const pageLoad = () => {
     linkContact.setAttribute('aria-selected', 'false');
     linkContact.innerHTML = 'Contact';
     navDiv.appendChild(linkContact);
+
+    const navTabs = document.createElement('div');
+    navTabs.classList.add('tab-content');
+    navTabs.setAttribute('id', 'nav-tabContent');
+    colTabs.appendChild(navTabs);
+
+    const menuContent = document.createElement('div');
+    menuContent.classList.add('tab-pane');
+    menuContent.classList.add('fade');
+    menuContent.classList.add('show');
+    menuContent.classList.add('active');
+    menuContent.setAttribute('id', 'nav-home');
+    menuContent.setAttribute('role', 'tabpanel');
+    menuContent.setAttribute('aria-labelledby', 'nav-home-tab');
+    navTabs.appendChild(menuContent);
+
+    const contactContent = document.createElement('div');
+    contactContent.classList.add('tab-pane');
+    contactContent.classList.add('fade');
+    contactContent.setAttribute('id', 'nav-profile');
+    contactContent.setAttribute('role', 'tabpanel');
+    contactContent.setAttribute('aria-labelledby', 'nav-profile-tab');
+    navTabs.appendChild(contactContent);
 
     return element;
 
