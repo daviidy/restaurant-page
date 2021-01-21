@@ -133,6 +133,6 @@ const pageLoad = () => {
   contactContent.setAttribute('aria-labelledby', 'nav-profile-tab');
   navTabs.appendChild(contactContent);
   return element;
-}
+};
 
 export default pageLoad;
